@@ -38,8 +38,11 @@ Applied separately for positive and negative samples:
 
 ### 5. Topic Modeling (LDA)
 - Latent Dirichlet Allocation (LDA) is applied to both positive and negative DTMs
-- Number of topics (`k`) set to 3
-- Gibbs sampling is used with 1,000 iterations and a fixed seed for reproducibility
+- The optimal number of topics  was selected based on evaluation using three established coherence and fit metrics:
+  - **Arun2010**
+  - **CaoJuan2009**
+  - **Griffiths2004**
+  - - Gibbs sampling is used with 1,000 iterations and a fixed seed for reproducibility
 - **Interactive topic visualizations** are created with `LDAvis`
 
 ---
